@@ -19,7 +19,7 @@ const Messages = () => {
 
   return (
     <div className="flex flex-col justify-center align-middle text-2xl text-white md:w-3/4">
-      <form onSubmit={void submitHandler} className="flex">
+      <form onSubmit={(event) => void submitHandler(event)} className="flex">
         <div className="md:w-3/4">
           <input
             id="message"

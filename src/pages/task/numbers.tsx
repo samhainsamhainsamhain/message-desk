@@ -26,7 +26,7 @@ const Numbers = () => {
 
   return (
     <div className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white md:w-3/4">
-      <form onSubmit={void submitHandler}>
+      <form onSubmit={(event) => void submitHandler(event)}>
         <input
           type="number"
           placeholder="Your number"
