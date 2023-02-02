@@ -9,3 +9,16 @@ datasource db {
     provider = "mysql"
     url      = env("DATABASE_URL")
 }
+
+model Message {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    text      String
+}
+
+model AvgCalculation {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    num       Int
+    prevNum   Int
+}
