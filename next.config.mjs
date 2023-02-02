@@ -14,5 +14,8 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  experimental: {
+    optimizeCss: true,
+  },
 };
 export default config;
